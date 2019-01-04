@@ -1,4 +1,4 @@
-test-repo
+Tobii Pro Studio AOI files
 =========
 
-This is a test repo. for the course The Data Scientist’s Toolbox.
+R code to convert AOI files from Tobii Pro Studio to sequence(s) of AOIs
