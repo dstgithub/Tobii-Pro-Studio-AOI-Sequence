@@ -1,0 +1,32 @@
+Introduction
+
+
+Tobii Pro Studio has a new format to export eye tracking data.
+
+For each participant, it exports an AOI file listing ALL the defined AOIs 
+from ALL the media or stimuli pages as columns, and ALL the timestamps as rows.
+
+For time periods during which media pages are not recorded, ALL the values are empty.
+For time periods during which media pages are recorded, at each timestamp, the values
+are "1" if there is a fixation on an AOI and "0" otherwise.
+
+Thus, the useful information (i.e., "1"s) is only a tiny part of the AOI file;
+the majority are blank with a lot of '0's.
+
+As a comparison, in the early versions of Tobii Studio (at least prior to version 2.1),
+the AOI file may contain as few as 3 columns: timestamp, AoiName, and StimuliName.
+Every timestamp corresponds to an AOI and a stimuli name.
+
+As a result, for the same recordings, the size of the AOI files from Tobii Pro Studio
+could be dozens or hundreds larger than those from early Tobii Studio, depending on
+the number of AOIs defined.
+
+The time difference to export files is similar to that of the sizes. Recently, it took 
+an i7-quad-core PC three days to export all the AOIs data (59 participants, average 
+recording time 15 minutes). Early version of Tobii Studio usually took about one hour
+or less to export AOI files for the same recordings.
+
+Therefore, the two R code files is for one AOI file one media page and for multiple
+AOI files multiple media pages, respectively.
+
+To read and process AOI files from the early Tobii Studio, please see dstgithub/eyeR.
