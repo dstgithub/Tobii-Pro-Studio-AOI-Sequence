@@ -18,7 +18,7 @@ the AOI file may contain as few as 3 columns: timestamp, AoiName, and StimuliNam
 Every timestamp corresponds to an AOI and a stimuli name.
 
 As a result, for the same recordings, the size of the AOI files from Tobii Pro Studio
-could be dozens or hundreds larger than those from early Tobii Studio, depending on
+could be dozens or hundreds times larger than those from early Tobii Studio, depending on
 the number of AOIs defined.
 
 The time difference to export files is similar to that of the sizes. Recently, it took 
